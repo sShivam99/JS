@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div=document.createElement('div');
+    div.className="main";
+    div.innerHTML="Hi, this div is created by me!!"
+
+    div.style.backgroundColor="green";
+    div.style.padding="20px";
+    div.style.color="black";
+    console.log(div);
+
+    document.body.appendChild(div);
+
+</script>
+</html>
