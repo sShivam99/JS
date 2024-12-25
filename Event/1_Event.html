@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <div id="container" >
+        <div id="contain1" style="border:5px solid black; padding:20px; margin:20px">
+            <h2>This is Content no. 1</h2>
+        </div>
+        <div class="contain2" style="border:5px solid black; padding:20px; margin:20px">
+            <h2>This is content no. 2</h2>
+        </div>
+    </div>
+</body>
+<script>
+    // document.querySelector('#container').addEventListener('click',function(e)
+    // {
+    //     console.log('Container Clicked')
+    // },true)
+    // document.querySelector('#contain1').addEventListener('click',function(e)
+    // {
+    //     console.log('Contain1 Clicked');
+    // },true)
+
+    document.querySelector('#container').addEventListener('click',function(e)
+    {
+        console.log('Container Clicked')
+    },false)
+    document.querySelector('#contain1').addEventListener('click',function(e)
+    {
+        console.log('Contain1 Clicked');
+    },false)
+
+
+</script>
+</html>
