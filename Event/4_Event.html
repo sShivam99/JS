@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1>Hi I am Shivam</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    let intervalID;
+    
+    document.querySelector('#start').addEventListener('click',
+        function()
+        {
+            const print=function()
+            {
+                console.log(Date.now);
+            }
+            intervalID=setInterval(print,2000);
+        }
+    )
+    document.querySelector('#stop').addEventListener('click',
+        function()
+        {
+            clearInterval(intervalID);
+        }
+    )
+</script>
+</html>
