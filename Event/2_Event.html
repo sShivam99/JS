@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event target</title>
+</head>
+<body>
+    <ul class="List">
+    <li> <button class="1">One</button></li>
+    <li> <button class="2">Two</button></li>
+    <li> <button class="3">Three</button></li>
+    <li> <button class="4">Four</button></li>
+    </ul>
+</body>
+<script>
+    document.querySelector('.List').addEventListener('click',
+        function(e)
+        {
+            const removeTarget=e.target.parentNode;
+            removeTarget.remove();
+        }
+    )
+</script>
+</html>
