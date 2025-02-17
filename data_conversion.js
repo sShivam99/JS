@@ -10,5 +10,15 @@ console.log(typeof num1);
 
 // type of NaN is number 
 // null is converted into 0.
+
+let x=1
+console.log(x+'1');
+console.log('1'+x);
+console.log('x'+x);
+console.log(x-'1');
+console.log('1'-x);
+console.log(x*'1');
+
+
  
 
